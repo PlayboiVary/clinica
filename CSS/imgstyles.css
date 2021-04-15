@@ -1,0 +1,197 @@
+/*SERVICIOS*/
+
+#servicio1{
+    background-image: linear-gradient(rgba(7, 91, 160, 0.5), rgba(4, 86, 163, 0.5)), url(/IMG/cirugia\ 480.jpg);
+}
+
+#servicio2{
+    background-image: linear-gradient(rgba(7, 91, 160, 0.5), rgba(4, 86, 163, 0.5)), url(/IMG/analisis\ 480.jpg);
+}
+
+#servicio3{
+    background-image: linear-gradient(rgba(7, 91, 160, 0.5), rgba(4, 86, 163, 0.5)), url(/IMG/muestra\ 480.jpg);
+}
+
+#servicio4{
+    background-image: linear-gradient(rgba(7, 91, 160, 0.5), rgba(4, 86, 163, 0.5)), url(/IMG/ultrasonido\ 480.jpg);
+}
+
+#servicio5{
+    background-image: linear-gradient(rgba(7, 91, 160, 0.5), rgba(4, 86, 163, 0.5)), url(/IMG/muestra\ 3\ 480.jpg);
+}
+/*UBICACION*/
+#ubicacion1{
+    background-image: linear-gradient(rgba(7, 91, 160, 0.5), rgba(4, 86, 163, 0.5)), url(/IMG/clinica\ 2\ 480.jpg);
+}
+
+/*EXAMENES*/
+
+#examenes1{
+    background-image: linear-gradient(rgba(7, 91, 160, 0.5), rgba(4, 86, 163, 0.5)), url(/IMG/doctora\ 480.jpg);
+}
+
+#examenes2{
+    background-image: linear-gradient(rgba(7, 91, 160, 0.5), rgba(4, 86, 163, 0.5)), url(/IMG/analisis\ 480.jpg);
+}
+
+#examenes3{
+    background-image: linear-gradient(rgba(7, 91, 160, 0.5), rgba(4, 86, 163, 0.5)), url(/IMG/muestra\ 480.jpg);
+}
+
+#examenes4{
+    background-image: linear-gradient(rgba(7, 91, 160, 0.5), rgba(4, 86, 163, 0.5)), url(/IMG/ultrasonido\ 480.jpg);
+}
+
+#examenes5{
+    background-image: linear-gradient(rgba(7, 91, 160, 0.5), rgba(4, 86, 163, 0.5)), url(/IMG/muestra\ 3\ 480.jpg);
+}
+
+#examenes6{
+    background-image: linear-gradient(rgba(7, 91, 160, 0.5), rgba(4, 86, 163, 0.5)), url(/IMG/muestra\ 2\ 480.jpg);
+}
+
+/*CIRUGIA*/
+#cirugia1{
+    background-image: linear-gradient(rgba(7, 91, 160, 0.5), rgba(4, 86, 163, 0.5)), url(/IMG/doctora\ 480.jpg);
+}
+
+#cirugia2{
+    background-image: linear-gradient(rgba(7, 91, 160, 0.5), rgba(4, 86, 163, 0.5)), url(/IMG/analisis\ 480.jpg);
+}
+
+#cirugia3{
+    background-image: linear-gradient(rgba(7, 91, 160, 0.5), rgba(4, 86, 163, 0.5)), url(/IMG/muestra\ 480.jpg);
+}
+
+@media (min-width: 600px){
+    /*SERVICIOS*/
+    #servicio1{
+        background-image: linear-gradient(rgba(7, 91, 160, 0.5), rgba(4, 86, 163, 0.5)), url(/IMG/cirugia\ 1024.jpg);
+    }
+    
+    #servicio2{
+        background-image: linear-gradient(rgba(7, 91, 160, 0.5), rgba(4, 86, 163, 0.5)), url(/IMG/analisis\ 1024.jpg);
+    }
+    
+    #servicio3{
+        background-image: linear-gradient(rgba(7, 91, 160, 0.5), rgba(4, 86, 163, 0.5)), url(/IMG/muestra\ 1024.jpg);
+    }
+    
+    #servicio4{
+        background-image: linear-gradient(rgba(7, 91, 160, 0.5), rgba(4, 86, 163, 0.5)), url(/IMG/ultrasonido\ 1024.jpg);
+    }
+    
+    #servicio5{
+        background-image: linear-gradient(rgba(7, 91, 160, 0.5), rgba(4, 86, 163, 0.5)), url(/IMG/muestra\ 3\ 1024.jpg);
+    }
+    /*UBICACION*/
+    #ubicacion1{
+    background-image: linear-gradient(rgba(7, 91, 160, 0.5), rgba(4, 86, 163, 0.5)), url(/IMG/clinica\ 2\ 1024.jpg);
+    }
+    /*EXAMENES*/
+
+#examenes1{
+    background-image: linear-gradient(rgba(7, 91, 160, 0.5), rgba(4, 86, 163, 0.5)), url(/IMG/doctora\ 1024.jpg);
+}
+
+#examenes2{
+    background-image: linear-gradient(rgba(7, 91, 160, 0.5), rgba(4, 86, 163, 0.5)), url(/IMG/analisis\ 1024.jpg);
+}
+
+#examenes3{
+    background-image: linear-gradient(rgba(7, 91, 160, 0.5), rgba(4, 86, 163, 0.5)), url(/IMG/muestra\ 1024.jpg);
+}
+
+#examenes4{
+    background-image: linear-gradient(rgba(7, 91, 160, 0.5), rgba(4, 86, 163, 0.5)), url(/IMG/ultrasonido\ 1024.jpg);
+}
+
+#examenes5{
+    background-image: linear-gradient(rgba(7, 91, 160, 0.5), rgba(4, 86, 163, 0.5)), url(/IMG/muestra\ 3\ 1024.jpg);
+}
+
+#examenes6{
+    background-image: linear-gradient(rgba(7, 91, 160, 0.5), rgba(4, 86, 163, 0.5)), url(/IMG/muestra\ 2\ 1024.jpg);
+}
+
+/*CIRUGIA*/
+#cirugia1{
+    background-image: linear-gradient(rgba(7, 91, 160, 0.5), rgba(4, 86, 163, 0.5)), url(/IMG/doctora\ 1024.jpg);
+}
+
+#cirugia2{
+    background-image: linear-gradient(rgba(7, 91, 160, 0.5), rgba(4, 86, 163, 0.5)), url(/IMG/analisis\ 1024.jpg);
+}
+
+#cirugia3{
+    background-image: linear-gradient(rgba(7, 91, 160, 0.5), rgba(4, 86, 163, 0.5)), url(/IMG/muestra\ 1024.jpg);
+}
+
+}
+
+@media (min-width:1200px){
+    /*SERVICIOS*/
+    #servicio1{
+        background-image: linear-gradient(rgba(7, 91, 160, 0.5), rgba(4, 86, 163, 0.5)), url(/IMG/cirugia\ 1200.jpg);
+    }
+    
+    #servicio2{
+        background-image: linear-gradient(rgba(7, 91, 160, 0.5), rgba(4, 86, 163, 0.5)), url(/IMG/analisis\ 1024.jpg);
+    }
+    
+    #servicio3{
+        background-image: linear-gradient(rgba(7, 91, 160, 0.5), rgba(4, 86, 163, 0.5)), url(/IMG/muestra\ 1200.jpg);
+    }
+    
+    #servicio4{
+        background-image: linear-gradient(rgba(7, 91, 160, 0.5), rgba(4, 86, 163, 0.5)), url(/IMG/ultrasonido\ 1200.jpg);
+    }
+    
+    #servicio5{
+        background-image: linear-gradient(rgba(7, 91, 160, 0.5), rgba(4, 86, 163, 0.5)), url(/IMG/muestra\ 3\ 1200.jpg);
+    }
+
+    /*UBICACION*/
+    #ubicacion1{
+    background-image: linear-gradient(rgba(7, 91, 160, 0.5), rgba(4, 86, 163, 0.5)), url(/IMG/clinica\ 2\ 1200.jpg);
+    }
+
+    /*EXAMENES*/
+
+#examenes1{
+    background-image: linear-gradient(rgba(7, 91, 160, 0.5), rgba(4, 86, 163, 0.5)), url(/IMG/doctora\ 1200.jpg);
+}
+
+#examenes2{
+    background-image: linear-gradient(rgba(7, 91, 160, 0.5), rgba(4, 86, 163, 0.5)), url(/IMG/analisis\ 1200.jpg);
+}
+
+#examenes3{
+    background-image: linear-gradient(rgba(7, 91, 160, 0.5), rgba(4, 86, 163, 0.5)), url(/IMG/muestra\ 1200.jpg);
+}
+
+#examenes4{
+    background-image: linear-gradient(rgba(7, 91, 160, 0.5), rgba(4, 86, 163, 0.5)), url(/IMG/ultrasonido\ 1200.jpg);
+}
+
+#examenes5{
+    background-image: linear-gradient(rgba(7, 91, 160, 0.5), rgba(4, 86, 163, 0.5)), url(/IMG/muestra\ 3\ 1200.jpg);
+}
+
+#examenes6{
+    background-image: linear-gradient(rgba(7, 91, 160, 0.5), rgba(4, 86, 163, 0.5)), url(/IMG/muestra\ 2\ 1200.jpg);
+}
+/*CIRUGIA*/
+#cirugia1{
+    background-image: linear-gradient(rgba(7, 91, 160, 0.5), rgba(4, 86, 163, 0.5)), url(/IMG/doctora\ 1200.jpg);
+}
+
+#cirugia2{
+    background-image: linear-gradient(rgba(7, 91, 160, 0.5), rgba(4, 86, 163, 0.5)), url(/IMG/analisis\ 1200.jpg);
+}
+
+#cirugia3{
+    background-image: linear-gradient(rgba(7, 91, 160, 0.5), rgba(4, 86, 163, 0.5)), url(/IMG/muestra\ 1200.jpg);
+}
+
+}

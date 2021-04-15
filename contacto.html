@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinca Zonal Belen</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="CSS/imgstyles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+</head>
+<body>
+    <body>
+        <header>
+            <img src="/IMG/corazon.png" alt="corazon">
+            <div class="hamburguerMenu" id="hmbbtn">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <h1>Clinica Medica Zonal Belen</h1>
+            <nav id="menu">
+                <ul>
+                    <li>
+                        <a href="index.html">INICIO</a>
+                    </li>
+                    <li>
+                        <a href="servicios.html">SERVICIOS</a>
+    
+                    </li>
+                    <li>
+                        <a href="ubicacion.html">UBICACION</a>
+                    </li>
+                    <li>
+                        <a href="#">CONTACTO</a>
+                    </li>
+                </ul>
+    
+            </nav>
+        </header>
+    
+        <main>
+            <section class="panel" id="inicio">
+                <div class="miSlide fade">
+    
+                    <img src="IMG/computadora 1200.jpg">
+    
+                </div>
+    
+                <div class="miSlide fade">
+                    <img src="IMG/consulta 1200.jpg">
+    
+                </div>
+    
+                <div class="miSlide fade">
+    
+                    <img src="IMG/doctoras 1200.jpg">
+                </div>
+    
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+            </section>
+            <div class="invert tarjeta">
+                <p>CONTACTO</p>
+            </div>
+            <div class="Contenedor" id="resena">
+                <div class="Card Card1">
+                    
+                    <div>
+                        <span>
+                            <img class="contacto-tarjetaimg1" src="IMG/New folder/icons8-ringing-phone-50.png" alt="phoneicon">
+                         </span>
+                        <p class="contacto-tarjeta">(+504 2223-1240)</p>
+                    </div>
+    
+                </div>
+                <div class="Card Card2">
+                    
+                     <div>
+                        <span>
+                            <img class="contacto-tarjetaimg2" src="IMG/New folder/whatsapp.png" alt="phoneicon">
+                         </span>
+                         <p class="contacto-tarjeta">(+504 3174-0676)</p>
+                     </div>
+    
+                </div>
+
+                <section>
+                    <div class="frmEX">
+                        <form method="POST" id="formContacto" class="frm">
+                            <h2>CONTACTO</h2>
+                            
+                            <div class="grupo">
+                                <input type="text" name="txtNombre" id="txtNombre" required><span class="barra"></span>
+                                <label>Nombre*</label>
+                                <div id="txtNombreErr" class="error"></div>
+                            </div>
+        
+                            <div class="grupo">
+                                <input type="tel" name="txtTelefono" id="txtTelefono" required><span class="barra"></span>
+                                <label>Teléfono</label>
+                                <div id="txtTelefonoErr" class="error"></div>
+                            </div>
+        
+                            <div class="grupo">
+                                <input type="text" name="txtCorreo" id="txtCorreo" required><span class="barra"></span>
+                                <label>Correo Electrónico*</label>
+                                <div id="txtCorreoErr" class="error"></div>
+                            </div>
+        
+                            <button type="submit" class="btnConsultar">Consultar</button>
+                        </form>
+                    </div>
+        
+                </section>
+
+        </main>
+        <footer>
+            <div class="fondo">
+    
+                <div class="social">
+                    <img class="logos" src="/IMG/New folder/facebook.png" alt="Logo facebook">
+                    <img class="logos" src="/IMG/New folder/whatsapp.png" alt="Logo whatsapp">
+                    <img class="logos" src="/IMG/New folder/Iconos.png" alt="Logo Instagram">
+                    <img class="logos" src="/IMG/New folder/pin.png" alt="Pin">
+                </div>
+                <div>
+                    <p>Clinica Zonal Belen © Copyright 2021 </p>
+                </div>
+            </div>
+    
+        </footer>
+        <script src="js/config.js"></script>
+        <script src="js/validacion_form.js"></script>
+</body>
+</html>

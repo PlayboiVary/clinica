@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantalla Examenes</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="CSS/imgstyles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <script src="js/validacion_form.js"></script>
+
+
+</head>
+
+<body>
+    <header>
+        <img src="/IMG/corazon.png" alt="corazon">
+        <div class="hamburguerMenu" id="hmbbtn">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <h1>Clinica Medica Zonal Belen</h1>
+        <nav id="menu">
+            <ul>
+                <li>
+                    <a href="index.html">INICIO</a>
+                </li>
+                <li>
+                    <a href="servicios.html">SERVICIOS</a>
+
+                </li>
+                <li>
+                    <a href="ubicacion.html">UBICACION</a>
+                </li>
+                <li>
+                    <a href="contacto.html">CONTACTO</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="panel" id="inicio">
+            <img src="./IMG/muestra 2 1200.jpg">
+            <div class="textoEXP">Panel de Examenes</div>
+        </section>
+
+        <section>
+            <div class="frmEX">
+                <form method="POST" id="formContacto" class="frm">
+                    <h2>EXAMENES</h2>
+                    <div class="combobox">
+                        <label for="cmbSuscripcion">Motivo de consulta: </label>
+                        <select class="cmb" id="cmbSuscripcion" name="cmbSuscripcion" required>
+                            <option value="Realizar">Realizar Examanes</option>
+                            <option value="Semanal">Consultar Examanes</option>
+                        </select>
+                    </div>
+                    <div class="grupo">
+                        <input type="text" name="txtNombre" id="txtNombre" required><span class="barra"></span>
+                        <label>Nombre*</label>
+                        <div id="txtNombreErr" class="error"></div>
+                    </div>
+
+                    <div class="grupo">
+                        <input type="tel" name="txtTelefono" id="txtTelefono" required><span class="barra"></span>
+                        <label>Teléfono</label>
+                        <div id="txtTelefonoErr" class="error"></div>
+                    </div>
+
+                    <div class="grupo">
+                        <input type="text" name="txtCorreo" id="txtCorreo" required><span class="barra"></span>
+                        <label>Correo Electrónico*</label>
+                        <div id="txtCorreoErr" class="error"></div>
+                    </div>
+
+                    <button type="submit" class="btnConsultar">Consultar</button>
+                </form>
+            </div>
+
+        </section>
+
+        <div class="invert tarjeta">
+            <div class="txtEXserv">
+                <p>NUESTROS SERVICIOS <br> PARA TU SALUD</p>
+            </div>
+
+        </div>
+        <div class="Contenedor" id="resena">
+            <div class="Card Card1" id="examenes1">
+                <div class="Fondo1">
+
+                </div>
+                <h3>
+                    Hemograma Completo
+                </h3>
+                <p>El hemograma consiste en un conteo de los elementos celulares de la sangre como son las células rojas, blancas y plaquetas. Este análisis incluye los índices o sea el contenido de hemoglobina de la célula roja, diámetro de las células.</p>
+                <button type="submit" class="button">Descargar Preparación</button>
+            </div>
+            <div class="Card Card2" id="examenes2">
+                <div class="Fondo2">
+
+                </div>
+                <h3>
+                    Urianálisis completo.
+                </h3>
+                <p>Unos cuantos mililitros de este desecho humano, pueden ser la clave para detectar un problema de salud relacionado con el sistema urinario</p>
+                <button type="submit" class="button">Descargar Preparación</button>
+
+            </div>
+            <div class="Card Card3" id="examenes3">
+                <div class="Fondo3">
+
+                </div>
+                <h3>
+                    Heces por parásito, sangre oculta.
+                </h3>
+                <p>En el trópico es frecuente, especialmente en los niños, encontrar parásitos en las heces. Este sencillo examen puede determinar si la causa de la diarrea se debe a parásitos, amebas o entero patógenos (salmonella, shigellas o campylobacter).</p>
+                <button type="submit" class="button">Descargar Preparación</button>
+            </div>
+            <div class="Card Card4" id="examenes4">
+                <div class="Fondo4">
+
+                </div>
+                <h3>
+                    Perfil renal:
+                </h3>
+                <p>Nitrógeno de urea, Creatinina, Ácido úrico, Proteína total, albúmina/globulina calcio, glucosa. Una prueba más sensible y específica para evaluar enfermedades renales es la creatinina. En problemas renales crónicos ambas pruebas brindan
+                    al médico mayor información.</p>
+                <button type="submit" class="button">Descargar Preparación</button>
+            </div>
+            <div class="Card Card5" id="examenes5">
+                <div class="Fondo5">
+
+                </div>
+                <h3>
+                    Perfil lipídico:
+                </h3>
+                <p>Colesterol, LDL; HDL; triglicérido. La importancia de estos análisis es de evaluar los factores de riesgos coronarios. se puede pedir a cualquier persona que haya tenido un episodio cardiovascular, a pacientes con diabetes, con daño renal
+                    crónico o que tengan antecedentes familiares de dislipidemia o enfermedad cardiovascular prematura (antes de los 55 años en varones y 65 años en mujeres).</p>
+                <button type="submit" class="button">Descargar Preparación</button>
+            </div>
+            <div class="Card Card6" id="examenes6">
+
+                <div class="Fondo6">
+
+                </div>
+                <div>
+                    <h3> Panel básico metabólico</h3>
+                    <p>Electrolitos, glucosa, nitrógeno de urea,creatinina. Los valores de referencia de cada análisis son incluidos en los informes. Estos rangos son estudios poblacionales en condiciones controladas de pacientes normales analizados en equipos
+                        confiables.
+                    </p>
+                    <button type="submit" class="button">Descargar Preparación</button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="Contacto" id="contacto">
+
+        </div>
+
+    </main>
+    <footer>
+        <div class="fondo">
+
+            <div class="social">
+                <img class="logos" src="/IMG/New folder/facebook.png" alt="Logo facebook">
+                <img class="logos" src="/IMG/New folder/whatsapp.png" alt="Logo whatsapp">
+                <img class="logos" src="/IMG/New folder/Iconos.png" alt="Logo Instagram">
+                <img class="logos" src="/IMG/New folder/pin.png" alt="Pin">
+            </div>
+            <div>
+                <p>Clinica Zonal Belen © Copyright 2021 </p>
+            </div>
+
+        </div>
+
+    </footer>
+    <script src="js/config.js"></script>
+</body>
+
+</html>

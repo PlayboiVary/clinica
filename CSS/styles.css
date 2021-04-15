@@ -1,0 +1,1058 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Oswald', sans-serif;
+    overflow-x: hidden;
+}
+
+
+/*************************************************************/
+
+header {
+    position: sticky;
+    top: 0px;
+    z-index: 9999;
+    background-color: #004263;
+    color: black;
+    box-shadow: 0 5px 20px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0px;
+}
+
+header img {
+    position: absolute;
+    max-width: 40px;
+    max-height: 40px;
+    top: 0.5rem;
+    margin-left: 1.2rem;
+}
+
+header h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bolder;
+    font-size: 1rem;
+    margin: 0px 2rem;
+    padding: 1rem;
+    margin-left: 60px;
+    color: #ffffff;
+}
+
+header nav ul li a {
+    font-weight: bolder;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0.5rem;
+    text-decoration: none;
+    color: #ffffff;
+    border-bottom: 1px solid #333;
+    transition: background-color 1s ease;
+}
+
+header nav ul li a:hover {
+    color: #43a4ca;
+    transition: background-color 1s ease;
+}
+
+
+/*************************************************************/
+
+
+/*Menu de hamburguesa*/
+
+.hamburguerMenu {
+    position: absolute;
+    top: 0.7rem;
+    margin-left: 80%;
+    display: flex;
+    width: 64px;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hamburguerMenu div {
+    background-color: #ffffff;
+    border-radius: 5px;
+    width: 40%;
+    min-height: 3px;
+    margin: 3px;
+}
+
+#menu {
+    overflow: hidden;
+    max-height: 100vh;
+    transition: max-height 0.5s linear;
+}
+
+#menu.hidden {
+    max-height: 0px;
+    transition: max-height 0.5s linear;
+}
+
+
+/*************************************************************/
+
+
+/*Desde aqui comienza el hero panel*/
+
+.panel {
+    width: 100vw;
+    height: 50vh;
+    position: relative;
+    /* Flexbox stuff */
+    display: flex;
+}
+
+.panel img {
+    height: 100%;
+    width: 100%;
+}
+
+.tituloPanel {
+    position: absolute;
+    top: 20%;
+    text-align: center;
+    width: 100%;
+    font-size: 4rem;
+    color: #fff;
+    text-shadow: -1px -1px 1px #333, 1px -1px 1px #333, -1px 1px 1px #333, 1px 1px 1px #333;
+}
+
+.textoEXP {
+    color: #004263;
+    font-size: 50px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 400px;
+    width: 100%;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+
+/*************************************************************/
+
+
+/*desde aqui comienza el slider*/
+
+.miSlide {
+    width: 100vw;
+    height: 50vh;
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Text styles */
+    /* Background styles */
+    background-size: cover;
+    background-position-x: 60%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 18px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.5s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.puntito {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes inicio {
+    100% {
+        scale: 10px;
+    }
+}
+
+
+/*************************************************************/
+
+
+/*aca termina el slider*/
+
+
+/*************************************************************/
+
+
+/*TARJETAS*/
+
+main .tarjeta {
+    padding: 1em;
+    /* box-shadow: 0px 3px 5px #333; */
+    width: 100%;
+    min-height: 40vh;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+.tarjeta p {
+    flex: 4;
+    justify-content: center;
+    line-height: 2;
+    padding: 3rem;
+    color: #004263;
+}
+
+.tarjeta p:nth-child(1) {
+    flex: 2;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 2rem;
+    text-align: center;
+}
+
+
+/*Tarjetitas2*/
+
+.Contenedor {
+    background-color: #1B3E51;
+    margin-left: -1rem;
+    width: calc(100% + 2rem);
+    padding: 1rem 0px;
+    text-align: center;
+}
+
+.Card {
+    background-color: #ffffff;
+    display: inline-block;
+    max-width: 420px;
+    max-height: 800px;
+    margin: 1rem auto 0px 0px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    vertical-align: top;
+    transition: all 400ms ease-out;
+    cursor: default;
+}
+
+.Card {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 90vw;
+    height: 60vh;
+    margin-top: 0px;
+    box-shadow: 0 1px 5px;
+    margin: 1rem;
+    border-radius: 6px;
+    color: #ffffff;
+}
+
+.Card:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+
+.fondo {
+    background-color: #1B3E51;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    color: #ffffff;
+    padding: 1rem;
+}
+
+.fondo p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+.logos {
+    width: 20px;
+    height: 20px;
+    margin-right: 1rem;
+}
+
+.Contacto {
+    background-color: #ffffff;
+    margin: 0;
+    justify-content: center;
+    color: #000000;
+    padding: 1rem;
+}
+
+.Contacto div {
+    margin-right: 1rem;
+}
+
+.Card1 {
+    background-image: linear-gradient(rgba(7, 91, 160, 0.5), rgba(4, 86, 163, 0.5)), url(/IMG/Examenes/H1.jpeg);
+}
+
+.Card2 {
+    background-image: linear-gradient(rgba(7, 91, 160, 0.5), rgba(4, 86, 163, 0.5)), url(/IMG/Examenes/U2.jpg);
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+.Card3 {
+    background-image: linear-gradient(rgba(7, 91, 160, 0.5), rgba(4, 86, 163, 0.5)), url(/IMG/Examenes/H3.jpg);
+}
+
+.Card4 {
+    background-image: linear-gradient(rgba(7, 91, 160, 0.5), rgba(4, 86, 163, 0.5)), url(/IMG/Examenes/R4.png);
+}
+
+.Card5 {
+    background-image: linear-gradient(rgba(7, 91, 160, 0.5), rgba(4, 86, 163, 0.5)), url(/IMG/Examenes/C5.jpg);
+}
+
+.Card6 {
+    background-image: linear-gradient(rgba(7, 91, 160, 0.5), rgba(4, 86, 163, 0.5)), url(/IMG/Examenes/M6.jpg);
+}
+
+.contacto-tarjeta {
+    margin-top: 10%;
+    font-size: 3rem;
+}
+
+.ubicacion-tarjeta{
+    margin-top: 20%;
+}
+
+span .contacto-tarjetaimg1 {
+    max-width: 70px;
+    max-height: 70px;
+    margin-top: 15%;
+}
+
+span .contacto-tarjetaimg2 {
+    max-width: 45px;
+    max-height: 45px;
+    margin-top: 15%;
+}
+
+.infotext {
+    position: relative;
+    color: #ffffff;
+    top: 25%;
+}
+
+.title2 {
+    font-weight: bold;
+}
+
+.button {
+    background-color: #ffffff;
+    position: absolute;
+    display: block;
+    width: 150px;
+    height: 40px;
+    border: none;
+    color: #004263;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 10px auto;
+    top: 50%;
+    left: 25%;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.button:hover {
+    background-color: #0f74b8;
+    transition: background-color 0.5s ease;
+}
+
+
+/*Formulario de Examenes*/
+
+.frmEX {
+    margin: 0 auto;
+    background-color: #f0f0f0;
+    padding: 10px 1;
+    border-radius: 10px;
+    width: 80%;
+    height: 600px;
+}
+
+.frm {}
+
+h2 {
+    font-size: 32px;
+    font-weight: 900;
+    text-align: center;
+    margin: 10px 0;
+    font-weight: 800;
+    background-image: linear-gradient(150deg, #0174CF, #0174CF);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.combobox {
+    display: flex;
+    margin-left: 50px;
+    color: #a3a3a3;
+    font-size: 17px;
+}
+
+.cmb {
+    margin-left: 1em;
+}
+
+.combobox select,
+option {
+    color: #a3a3a3;
+    border-color: #5f5f5f;
+    font-size: 17px;
+}
+
+.grupo {
+    position: relative;
+    margin: 45px;
+}
+
+.error {
+    padding: 8px;
+    color: #bb0000;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.grupo input,
+.grupo textarea {
+    background: none;
+    color: #a3a3a3;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #a3a3a3;
+}
+
+.grupo input:focus,
+.grupo textarea:focus {
+    outline: none;
+    color: #a3a3a3;
+}
+
+.grupo input:focus~label,
+.grupo input:valid~label,
+.grupo textarea:focus~label,
+.grupo textarea:valid~label {
+    position: absolute;
+    top: -14px;
+    font-size: 12px;
+    color: #0286A4;
+}
+
+.grupo label {
+    color: #a3a3a3;
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    transition: 0.5s ease all;
+    pointer-events: none;
+}
+
+.grupo input:focus~.barra,
+.grupo textarea:focus~.barra {
+    width: 100%;
+}
+
+.barra {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.btnConsultar {
+    background-color: #0174CF;
+    display: block;
+    width: 150px;
+    height: 40px;
+    border: none;
+    color: #ffffff;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 10px auto;
+    margin-top: 70px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.btnConsultar:hover {
+    background-color: #084168;
+    transition: background-color 0.5s ease;
+}
+
+.txtEXserv {
+    margin: 0 auto;
+}
+
+
+/*Fin Form*/
+
+
+/*-----------INICIO TARJETAS ODONTO---------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+.contenedor-tarjeta {
+    width: 100%;
+    display: flex;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.tarjetaOdonto {
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    transition: all 400ms ease-out;
+    cursor: default;
+}
+
+.tarjetaOdonto:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+
+.tarjetaOdonto img {
+    width: 100%;
+    height: 210px;
+}
+
+.tarjetaOdonto .contenido-tarjeta {
+    padding: 15px;
+    text-align: center;
+}
+
+.tarjetaOdonto .contenido-tarjeta h3 {
+    margin-bottom: 15px;
+    color: #004263;
+}
+
+.tarjetaOdonto .contenido-tarjeta p {
+    line-height: 1.8;
+    color: #004263;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.tarjetaOdonto .contenido-tarjeta a {
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #004263;
+    border: 1px solid #004263;
+    border-radius: 4px;
+    transition: all 400ms ease;
+    margin-bottom: 5px;
+}
+
+.tarjetaOdonto .contenido-tarjeta a:hover {
+    background: #ececec;
+    color: #004263;
+}
+
+@media only screen and (min-width:320px) and (max-width:768px) {
+    .contenedor-tarjeta {
+        flex-wrap: wrap;
+    }
+    .tarjetaOdonto {
+        margin: 15px;
+    }
+}
+
+
+/*-----------FINAL ODONTO----------------------*/
+
+
+/*Comienzo de los media Q*/
+
+@media (min-width: 200px) {
+    .combobox {
+        display: flex;
+        margin-left: 25px;
+        color: #a3a3a3;
+        font-size: 11px;
+    }
+    .cmb {
+        margin-left: 0.5em;
+    }
+    .combobox select,
+    option {
+        color: #a3a3a3;
+        border-color: #5f5f5f;
+        font-size: 11px;
+    }
+}
+
+@media (min-width: 600px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header nav ul {
+        display: flex;
+        padding: 0px 1rem;
+    }
+    #menu.hidden {
+        max-height: max-content;
+    }
+    #hmbbtn {
+        display: none;
+    }
+    header nav ul li a {
+        border-bottom: none;
+        padding: 1rem 1.5rem;
+    }
+    .panel {
+        background-size: cover;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://placehold.it/1024x640 ");
+        background-position-x: 50%;
+    }
+    .Card {
+        margin-right: 1rem;
+        max-width: 800px;
+        width: 100%;
+        margin-top: -1rem;
+        margin-bottom: 3rem;
+    }
+
+    .ubicacion-tarjeta{
+        margin-top: 10%;
+    }
+    .contacto-tarjeta {
+        margin-top: 5%;
+        font-size: 3rem;
+    }
+
+    span .contacto-tarjetaimg1 {
+        max-width: 70px;
+        max-height: 70px;
+        margin-top: 10%;
+    }
+    
+    span .contacto-tarjetaimg2 {
+        max-width: 45px;
+        max-height: 45px;
+        margin-top: 10%;
+    }
+    .panel img {
+        height: 50vh;
+        width: 100vw;
+    }
+    .button {
+        right: 25%;
+        top: 50%;
+    }
+    .infotext {
+        font-size: 2rem;
+        top: 10%;
+    }
+    header h1 {
+        margin-left: 110px;
+        font-size: 1.2rem;
+    }
+    header img {
+        max-width: 60px;
+        max-height: 60px;
+        top: 1rem;
+        margin-left: 3rem;
+    }
+    .Contacto {
+        margin-left: 2rem;
+    }
+    .combobox {
+        display: flex;
+        margin-left: 20px;
+        color: #a3a3a3;
+        font-size: 10px;
+    }
+    .cmb {
+        margin-left: 0.5em;
+    }
+    .combobox select,
+    option {
+        color: #a3a3a3;
+        border-color: #5f5f5f;
+        font-size: 20px;
+    }
+    .tarjeta p {
+        margin-top: 3rem;
+    }
+}
+
+@media (min-width:1200px) {
+    .panel {
+        background-size: cover;
+        height: 100vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://placehold.it/1200x800 ");
+        background-position-x: 60%;
+    }
+    header h1 {
+        font-weight: 5px;
+        margin: 1rem 2rem;
+        padding: 1rem;
+        font-size: 2rem;
+    }
+    .tarjeta {
+        display: flex;
+    }
+
+    
+
+    .Contenedor {
+        width: 100vw;
+    }
+    .Card {
+        margin-left: 3rem;
+        max-width: 500px;
+        max-height: 500px;
+        margin: 2rem;
+    }
+    .Card form .button:hover {
+        border: 2px #0b8aca solid;
+        background-color: #0d9ae0;
+        box-shadow: 4px 4px 10px #0a2f42;
+        transition: background-color 0.5s ease, box-shadow 0.2s linear;
+        animation: CardBtnAnimation 0.5s ease-in-out;
+    }
+    /*animacion de salto para los botones utilizando el eje y*/
+    @keyframes CardBtnAnimation {
+        0% {
+            transform: translateY(0rem);
+        }
+        20% {
+            transform: translateY(0.3rem);
+        }
+        30% {
+            transform: translateY(-1rem);
+        }
+        60% {
+            transform: translateY(0.3rem);
+        }
+        70% {
+            transform: translateY(0rem);
+        }
+    }
+    .Contacto {
+        display: flex;
+    }
+    .Contacto div {
+        margin: 3rem;
+        padding-right: 10rem;
+    }
+    .Contacto {
+        width: 100vw;
+    }
+    .panel img {
+        height: 100vh;
+        width: 100vw;
+    }
+    .next {
+        margin-right: 1rem;
+    }
+    .tarjeta p:nth-child(1) {
+        font-size: 3rem;
+    }
+    .button {
+        right: 25%;
+        top: 50%;
+    }
+    .infotext {
+        font-size: 2rem;
+        top: 10%;
+    }
+    header h1 {
+        margin-left: 130px;
+        font-size: 2rem;
+    }
+    header img {
+        top: 1.5rem;
+    }
+    .frmEX {
+        margin-left: auto;
+    }
+    .combobox {
+        display: flex;
+        margin-left: 25px;
+        color: #a3a3a3;
+        font-size: 15px;
+    }
+    .cmb {
+        margin-left: 1em;
+    }
+    .combobox select,
+    option {
+        color: #a3a3a3;
+        border-color: #5f5f5f;
+        font-size: 15px;
+    }
+    .texto2 {
+        margin-top: 3rem;
+    }
+}
+
+
+/*-------------------------------------Ultrasonido------------------------------------*/
+
+.contenedor {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.contenedor figure {
+    position: relative;
+    height: 250px;
+    width: 850px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.70);
+    cursor: pointer;
+}
+
+.contenedor figure img {
+    width: 100%;
+    height: 100%;
+    transition: all 2s ease-out;
+}
+
+.contenedor figure .cap {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    background: rgba(66, 177, 202, 0.2);
+    transition: all 1s ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.contenedor figure:hover>.cap {
+    opacity: 1;
+    visibility: visible;
+}
+
+.contenedor figure:hover>.cap h3 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.contenedor figure:hover>img {
+    transform: scale(1.5);
+}
+
+.contenedor figure .cap h3 {
+    font-size: 3rem;
+    margin-bottom: 120px;
+    transition: all 1s ease-out;
+    margin-top: 30px;
+}
+
+.contenedor figure .cap p {
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 35rem;
+    margin: auto;
+}
+
+
+/*------------------IFinaliza estilos de imagen 1-------------------------*/
+
+.ultrasonidosp {
+    top: 400px;
+    left: 0px;
+}
+
+.ultrasonidos {
+    width: 90%;
+    margin: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: rgb(218, 238, 237);
+    transition: all 400ms ease-out;
+    cursor: default;
+    margin-left: 01rem;
+}
+
+.ultrasonidos:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+
+.ultrasonidos img {
+    width: 250px;
+    float: left;
+    margin-bottom: 0;
+    margin-right: 2rem;
+}
+
+.ultrasonidos .contenido p {
+    position: relative;
+    top: 1.5rem;
+    font-size: 15;
+    font-weight: 300;
+    max-width: 54rem;
+}
+
+.ultrasonidos .contenido h3 {
+    position: relative;
+    top: 1rem;
+}
+
+
+/*---------------------Cauterizacion---------------------------------*/
+
+.cau {
+    background: rgb(217, 233, 243);
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.cont {
+    width: 100%;
+    display: flex;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.caut {
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    background: rgb(217, 233, 243);
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    transition: all 400ms ease-out;
+    cursor: default;
+}
+
+.caut:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+
+.caut img {
+    position: relative;
+    width: 100%;
+    height: 250px;
+}
+
+.caut .contenidot {
+    padding: 15px;
+    text-align: center;
+}
+
+.caut .contenidot h3 {
+    margin-bottom: 15px;
+    color: #000000;
+}
+
+.caut .contenidot p {
+    line-height: 1.5;
+    color: #000000;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.cau h3 {
+    font-size: 2rem;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.cau p {
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 50rem;
+    margin: auto;
+}
